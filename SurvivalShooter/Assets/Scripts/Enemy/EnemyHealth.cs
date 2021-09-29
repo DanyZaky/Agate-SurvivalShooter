@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class EnemyHealth : MonoBehaviour
 {
+    public GameObject textDamagePrefabs;
     public int startingHealth = 100;
     public int currentHealth;
     public float sinkSpeed = 2.5f;
@@ -59,11 +61,24 @@ public class EnemyHealth : MonoBehaviour
         //Play particle system
         hitParticles.Play();
 
+        //text damaged
+        if (textDamagePrefabs)
+        {
+            ShowtextDamage();
+        }
+        
+
         //Dead jika health <= 0
         if (currentHealth <= 0)
         {
             Death();
         }
+    }
+
+    void ShowtextDamage()
+    {
+        var go = Instantiate(textDamagePrefabs, transform.position, Quaternion.identity, transform);
+        go.GetComponent<TextMesh>().text = currentHealth.ToString();
     }
 
 

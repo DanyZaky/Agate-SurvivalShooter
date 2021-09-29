@@ -9894,6 +9894,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9b9d14572410594cb85d40eedfb150c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHealth: {fileID: 592238540, guid: 46946d557846e7a429deee24c17956d8, type: 3}
+  playerMove: {fileID: 592238534, guid: 46946d557846e7a429deee24c17956d8, type: 3}
+  textDamagePrefabs: {fileID: 5501850577061606814, guid: 7bfdacc2ec344c440990dfc4669499b4,
+    type: 3}
   startingHealth: 100
   currentHealth: 0
   sinkSpeed: 2.5

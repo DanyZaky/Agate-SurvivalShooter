@@ -33,7 +33,6 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = startingHealth;
     }
 
-
     void Update()
     {
         //Jika terkena damaage
@@ -50,6 +49,11 @@ public class PlayerHealth : MonoBehaviour
 
         //Set damage to false
         damaged = false;
+
+        if (currentHealth > 100)
+        {
+            currentHealth = 100;
+        }
     }
 
     //fungsi untuk mendapatkan damage
