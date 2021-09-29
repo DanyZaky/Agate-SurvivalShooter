@@ -4,10 +4,11 @@ using UnityEngine.SceneManagement;
 
 public class GameOverManager : MonoBehaviour
 {
-    public PlayerHealth playerHealth;       
+    public PlayerHealth playerHealth;
+
     public float restartDelay = 5f;
     public Text warningText;
-
+    bool isDead;
 
     Animator anim;                          
     float restartTimer;                    
@@ -16,6 +17,7 @@ public class GameOverManager : MonoBehaviour
     void Awake()
     {
         anim = GetComponent<Animator>();
+        isDead = false;
     }
 
 
@@ -23,7 +25,12 @@ public class GameOverManager : MonoBehaviour
     {
         if (playerHealth.currentHealth <= 0)
         {
-            anim.SetTrigger("GameOver");
+            if (isDead == false)
+            {
+                anim.SetTrigger("GameOver");
+                Debug.Log("abis");
+                isDead = true;
+            }
 
             restartTimer += Time.deltaTime;
 
