@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 3609815987236560}
   - component: {fileID: 5817026710299414227}
   - component: {fileID: 700967730843207843}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ZomBear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -253,7 +253,7 @@ MonoBehaviour:
   currentHealth: 0
   sinkSpeed: 2.5
   scoreValue: 10
-  deathClip: {fileID: 0}
+  deathClip: {fileID: 8300000, guid: 62366b8d2c37a49dca550841c741317f, type: 3}
 --- !u!114 &700967730843207843
 MonoBehaviour:
   m_ObjectHideFlags: 0

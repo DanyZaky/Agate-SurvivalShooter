@@ -9662,7 +9662,7 @@ GameObject:
   - component: {fileID: 5055921955872884196}
   - component: {fileID: 4583408655212837003}
   - component: {fileID: 5018504338438712238}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hellephant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9898,7 +9898,7 @@ MonoBehaviour:
   currentHealth: 0
   sinkSpeed: 2.5
   scoreValue: 10
-  deathClip: {fileID: 0}
+  deathClip: {fileID: 8300000, guid: 8c615fd0429f34edf85539d70279360d, type: 3}
 --- !u!114 &5018504338438712238
 MonoBehaviour:
   m_ObjectHideFlags: 0
